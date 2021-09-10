@@ -1,0 +1,19 @@
+﻿<Window x:Class="AccordFaceDetections.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AccordFaceDetections"
+        mc:Ignorable="d"
+        Title="Image Face Detection" Height="1000" Width="1000">
+    <Grid x:Name="MainGrid" Background="#FFDAE21C">
+        <Grid.ColumnDefinitions>
+        </Grid.ColumnDefinitions>
+        <Button Content="Pick Folder " Click="PickFolderClick" HorizontalAlignment="Left" Margin="10,99,0,0" VerticalAlignment="Top" Width="111" Height="38" FontSize="16"/>
+        <TextBlock x:Name="SelectedPath" HorizontalAlignment="Left" Margin="150,152,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="43" Width="626" RenderTransformOrigin="0.416,2.508" Background="White"/>
+        <Label Content="Selected path:" HorizontalAlignment="Left" Margin="10,152,0,0" VerticalAlignment="Top" Background="#FFDDDDDD" Width="111" Height="43" FontSize="16"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="10,35,0,0" TextWrapping="Wrap" Text="Pick a folder from which you want to extract images that contain faces in them (only *.png ,*jpg and *.jpeg supported)" VerticalAlignment="Top" Width="746" Background="#FFDDDDDD"/>
+        <Label Content="Images :" HorizontalAlignment="Left" Margin="10,215,0,0" VerticalAlignment="Top" Height="40" Width="111" Background="#FFDDDDDD" FontSize="16"/>
+
+    </Grid>
+</Window>
